@@ -1,1 +1,32 @@
+Day 36 /100 of #DrGVishwanathanChallenge
+Today's practice focused on taking Backtracking one step further by handling duplicate elements efficiently. 
+Problem 1: LeetCode 90 – Subsets II
+🔹 Approach
+Sorted the input array so duplicate elements become adjacent.
+Used Backtracking to generate all subsets.
+Added the current subset to the answer at every recursive call.
+While iterating, skipped duplicate elements using:
+if(i > index && arr[i] == arr[i-1]) continue;
+Backtracked after every recursive call by removing the last added element.
+Time Complexity : O(N × 2ᴺ)
+Space Complexity :  O(N) (Recursion stack, excluding output)
+💡 Key Takeaways
+1. Sorting simplifies duplicate handling.
+2. Learned how to skip duplicate recursive branches.
+3. Backtracking can efficiently generate unique subsets without using extra data structures.
 
+Problem 2: LeetCode 40 – Combination Sum II
+🔹 Approach
+Sorted the candidates array.
+Used Backtracking to build combinations.
+Since each number can be used only once, recursive calls move to the next index (i + 1).
+Skipped duplicate elements at the same recursion level.
+Pruned the search whenever the current candidate became greater than the remaining target:
+if(arr[i] > target) break;
+because the array is sorted.
+Time Complexity : O(2ᴺ) (Worst Case)
+Space Complexity : O(N) (Recursion stack, excluding output)
+💡 Key Takeaways
+1. Sorting enables both duplicate removal and early pruning.
+2. Learned the difference between Combination Sum I (reuse allowed) and Combination Sum II (each element used once).
+3. Efficient pruning significantly reduces unnecessary recursive calls.
