@@ -1,0 +1,31 @@
+Day 35 /100 of #DrGVishwanathanChallenge
+Today's challenge was all about Backtracking. I worked on two classic problems that strengthened my understanding of recursive exploration, decision-making, and pruning invalid paths.
+ Problem 1: LeetCode 39 – Combination Sum
+🔹 Approach
+Used Backtracking to generate all possible combinations whose sum equals the target.
+At every recursive call:
+Added the current candidate to the combination.
+Continued from the same index since elements can be reused unlimited times.
+Backtracked by removing the last element after returning.
+Pruned recursion whenever the current sum exceeded the target.
+ Time Complexity: O(2<sup>target/min</sup>) (Exponential in the worst case)
+Space Complexity: O(target / min) (Recursion depth excluding output)
+💡 Key Takeaways
+1.Learned how to reuse the same element during recursion.
+2. Understood pruning to eliminate unnecessary recursive calls.
+3. Improved understanding of recursive state management using backtracking.
+
+Problem 2: LeetCode 78 – Subsets
+🔹 Approach
+Used Backtracking to generate every possible subset.
+Added the current subset to the answer before exploring further.
+Iterated from the current index:
+Included an element.
+Recurred for the remaining elements.
+Backtracked by removing the last added element.
+Time Complexity: O(N × 2ᴺ)
+Space Complexity: O(N) (Recursion stack excluding output)
+💡 Key Takeaways
+1. Every recursive state represents one valid subset.
+2. Backtracking naturally generates the entire power set.
+3. Practiced efficient add-remove operations to maintain the current subset.
