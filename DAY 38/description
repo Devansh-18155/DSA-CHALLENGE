@@ -1,1 +1,32 @@
+Today's focus was on combining Backtracking with Greedy Algorithms, solving problems that required efficient search and optimal decision-making.
 
+ Problems Solved
+
+1. LeetCode 79 – Word Search
+
+Approach: Backtracking + DFS
+Time Complexity: O(m × n × 4ᴸ)
+Space Complexity: O(L) (Recursion Stack)
+
+Key Takeaway:
+
+Practiced performing DFS in a 2D grid while marking cells as visited and restoring them during backtracking. This reinforced how to explore all possible paths without revisiting the same cell.
+
+2. LeetCode 455 – Assign Cookies
+
+Approach: Greedy + Two Pointers
+Time Complexity: O(n log n + m log m)
+Space Complexity: O(1) (excluding sorting space)
+
+Key Takeaway:
+
+Learned the importance of sorting and making the locally optimal choice by assigning the smallest sufficient cookie to each child, leading to the maximum number of satisfied children.
+
+Today's problems highlighted two different strategies:
+
+Backtracking for exhaustive path exploration.
+Greedy for making optimal local decisions that produce the best overall result.
+
+Every problem solved is another step toward stronger problem-solving skills.
+
+#DrGViswanathanChallenge #100DaysOfCode #LeetCode #Java #DSA #Backtracking #DFS #Greedy #TwoPointers #ProblemSolving #CodingJourney
