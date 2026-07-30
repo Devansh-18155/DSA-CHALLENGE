@@ -1,1 +1,22 @@
+Completed four more LeetCode problems today, focusing on Greedy algorithms, Two Pointers, and Backtracking. Each problem reinforced a different way of thinking about optimization and search.
+Problems Solved
 
+ Problem 1. Leetcode :860. (Lemonade Change)
+Used a Greedy approach by always giving change using a $10 + $5 before using three $5 bills. This preserves smaller denominations for future customers and maximizes the chances of serving everyone.
+
+Problem 2. Leetcode :55. Jump (GameMaintained)
+ the farthest index reachable while traversing the array. If the current index ever becomes greater than the maximum reachable index, reaching the end is impossible. Otherwise, continuously update the farthest reachable position.
+
+Problem 3. Leetcode: 455. (Assign Cookies) :Sorted both the children's greed factors and cookie sizes. Using two pointers, assigned the smallest cookie that could satisfy the current child, ensuring maximum children are content without wasting larger cookies.
+
+Problem 4. Leetcode : 79. (Word Search) :Applied Backtracking (DFS) by exploring all four directions from each cell. Marked visited cells temporarily to avoid revisiting them in the same path, and restored them while backtracking to explore other possibilities.
+
+-> What I Learned
+1) Greedy algorithms work when making the best local decision leads to the optimal overall solution.
+2) Tracking only the necessary state (like the farthest reachable index) can reduce complex problems to a simple linear scan.
+3) Sorting often simplifies matching problems by enabling efficient two-pointer techniques.
+-> Complexity
+Lemonade Change: O(n) Time | O(1) Space
+Jump Game: O(n) Time | O(1) Space
+Assign Cookies: O(n log n + m log m) Time | O(1) Extra Space
+Word Search: O(m × n × 4ᴸ) Time | O(L) Space (Recursion Stack)
