@@ -1,1 +1,23 @@
+Day 40 /100 of #DrGVishwanathanChallenge
+Solved two interesting Greedy problems on LeetCode today!
+Problem 1. Leetcode(45 Jump Game II):
+Approach:
+ Used a Greedy + Range Expansion approach. While traversing the array, I kept track of the farthest index that can be reached within the current jump range. Whenever I reached the end of the current range, I incremented the jump count and updated the range to the farthest reachable index. This guarantees the minimum number of jumps required.
 
+Time Complexity: O(n)
+ Space Complexity: O(1)
+
+Problem 2. Leetcode:( 678. Valid Parenthesis String) :
+Approach:
+ Used a Greedy Range technique by maintaining two counters:
+low → minimum possible number of unmatched '('
+high → maximum possible number of unmatched '('
+For every '*', it can behave as '(', ')', or an empty character, so the range is updated accordingly. If high becomes negative, the string is invalid. At the end, if low == 0, a valid interpretation exists.
+
+Time Complexity: O(n)
+ Space Complexity: O(1)
+
+-> Key Takeaways
+1) Learned how greedy algorithms can make optimal decisions using local information.
+2) Understood the concept of maintaining boundaries/ranges instead of checking every possible case.
+3) Strengthened my ability to identify when a greedy solution is more efficient than simulation or dynamic programming.
