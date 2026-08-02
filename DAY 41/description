@@ -1,1 +1,24 @@
+Today's session focused on solving two classic Greedy and Interval problems from LeetCode.
+Problem 1 :Leetcode 435. Non-overlapping Intervals
+Approach:
+ Sorted all intervals based on their ending time. Starting with the first interval, I greedily kept every interval whose start time was greater than or equal to the end of the previously selected interval. Whenever an overlap occurred, I removed the interval that ended later by simply keeping the one with the smaller end time. This greedy choice maximizes the number of non-overlapping intervals, giving the minimum removals.
 
+Time Complexity: O(n log n) (Sorting)
+ Space Complexity: O(1) (Ignoring sorting space)
+
+Problem 2: 57. Insert Interval
+Approach:
+ Traversed the intervals in three phases:
+Added all intervals that end before the new interval begins.
+Merged all overlapping intervals with the new interval by updating its start and end.
+Added the merged interval, followed by the remaining non-overlapping intervals.
+This ensures the intervals remain sorted and merged in a single traversal after insertion.
+
+Time Complexity: O(n)
+ Space Complexity: O(n) (For the output list)
+
+Key Takeaways
+1) Learned how sorting by ending time leads to optimal solutions in interval scheduling problems.
+2) Strengthened my understanding of interval merging and handling overlapping ranges efficiently.
+3) Reinforced the power of greedy algorithms in producing optimal solutions with simple logic.
+#DrGVishwanathanChallenge #DSA #LeetCode #Java #Greedy #Intervals #Algorithms #ProblemSolving #LearningInPublic
