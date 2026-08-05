@@ -1,1 +1,27 @@
+Day 43/100 of #DrGVishwanathanChallenge
+Today's focus was on solving Heap (Priority Queue) based problems, improving my understanding of greedy strategies and efficient data structures.
+ Problem 1: 373. Find K Pairs with Smallest Sums (Medium)
+ Approach:
+Used a Min Heap (Priority Queue) to always retrieve the pair having the smallest sum.
+Initially inserted pairs formed by every element of nums1 with the first element of nums2.
+Repeatedly extracted the minimum pair, added it to the answer, and inserted the next possible pair from nums2.
+This avoids generating all possible pairs, making the solution much more efficient.
 
+Time Complexity:O((n + k) log n),n = nums1.length
+Space Complexity:O(n)
+
+Problem 2: 1046. Last Stone Weight (Easy)
+Approach:
+Stored all stones in a Max Heap.
+Repeatedly removed the two heaviest stones.
+If their weights were different, inserted the remaining weight back into the heap.
+Continued until one or no stone remained.
+
+Time Complexity: O(n log n)
+Space Complexity: O(n)
+
+ Key Learnings
+1) Efficient use of Priority Queues (Min Heap & Max Heap).
+2) Optimizing pair generation instead of brute force.
+3) Applying greedy techniques with heaps for faster solutions.
+#DrGVishwanathanChallenge #Day43 #LeetCode #DSA #Java #PriorityQueue #Heap #Greedy #ProblemSolving #100DaysOfCode 
