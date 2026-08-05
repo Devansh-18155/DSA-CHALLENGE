@@ -1,1 +1,24 @@
+Day 42/100 of #DrGVishwanathanChallenge
+Today's challenge focused on mastering Greedy Algorithms through two classic optimization problems.
+Problem 1. Leetcode: 1710. Maximum Units on a Truck
+Approach:
+ Sorted the box types in descending order of units per box. Starting from the box type with the highest units, I greedily loaded as many boxes as possible until the truck was full. This ensures every available slot contributes the maximum possible number of units.
 
+Time Complexity: O(n log n) (Sorting)
+ Space Complexity: O(1) (Ignoring sorting space)
+
+Problem 2 Leetcode : 135. Candy
+Approach:
+ Used a two-pass Greedy approach:
+In the first (left-to-right) pass, ensured every child with a higher rating than the left neighbor received more candies.
+In the second (right-to-left) pass, ensured the same condition for the right neighbor while preserving the previous assignments using max().
+Finally, summed all the candies to obtain the minimum valid distribution.
+
+Time Complexity: O(n)
+ Space Complexity: O(n)
+
+Key Takeaways:
+1) Learned that sorting by the most beneficial choice first often leads to an optimal greedy solution.
+2) Understood how multiple greedy passes can satisfy constraints from different directions.
+3) Strengthened my understanding of optimization problems where making locally optimal decisions leads to a globally optimal solution.
+#DrGVishwanathanChallenge #DSA #LeetCode #Java #Greedy #Algorithms #ProblemSolving #LearningInPublic
