@@ -1,1 +1,27 @@
+Day 44/100 of #DrGVishwanathanChallenge
+Today's learning was focused on Binary Trees and understanding Depth-First Search (DFS) using recursion.
+ Problem 1: 94. Binary Tree Inorder Traversal (Easy)
+ Approach:
+Used recursive DFS.
+Followed the Left → Root → Right (LNR) traversal order.
+Visited the left subtree first, then the current node, and finally the right subtree.
+Stored each visited node in the result list.
 
+ Time Complexity:O(n) – Every node is visited exactly once.
+Space Complexity :O(h) – Recursive call stack, where h is the height of the tree.
+
+Problem 2: 144. Binary Tree Preorder Traversal (Easy)
+ Approach:
+Used recursive DFS.
+Followed the Root → Left → Right (NLR) traversal order.
+Visited the current node first, then recursively traversed the left and right subtrees.
+Collected all node values in the required order.
+
+Time Complexity: O(n) – Every node is visited once.
+Space Complexity:O(h) – Recursive stack space, where h is the height of the tree.
+
+Key Learnings:
+1) Understood the difference between Inorder and Preorder traversals.
+2) Strengthened recursive thinking for tree-based problems.
+3) Learned how changing the order of recursive calls changes the traversal.
+#DrGVishwanathanChallenge #LeetCode #DSA #BinaryTree #TreeTraversal #DFS #Recursion #Java #ProblemSolving 
