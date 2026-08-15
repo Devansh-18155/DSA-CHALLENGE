@@ -1,1 +1,14 @@
+ Day 46 -Binary Tree Level Order Traversal (LeetCode 102)
+ Approach:
+I used Depth-First Search (DFS) with recursion and maintained the current level.
+For every node:
+• Create a new list when visiting a new level
+• Add the node value to its corresponding level
+• Recursively traverse the left and right subtrees
+Time Complexity: O(n)
+Space Complexity: O(n)- for the result and recursion stack in the worst case.
 
+- Key Takeaways:
+1) BFS is especially useful when we need the shortest/minimum level in a tree.
+2)DFS recursion can efficiently organize nodes according to their depth.
+3)Understanding tree levels makes many Binary Tree problems much easier.
