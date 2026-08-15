@@ -1,1 +1,8 @@
-
+Continuing my DSA journey I solved two important Binary Tree problems that helped me strengthen my understanding of BFS, recursion and level wise traversal.
+Day 45- Minimum Depth of Binary Tree(LeetCode 111)
+ Approach:
+I used Breadth-First Search (BFS) with a Queue.
+The tree is processed level by level, and as soon as I encounter the first leaf node (a node with no left and right child), I return the current depth.
+Using BFS is efficient here because the first leaf encountered is guaranteed to be at the minimum depth.
+ Time Complexity: O(n)
+ Space Complexity: O(n)-Queue can contain nodes from a level.
