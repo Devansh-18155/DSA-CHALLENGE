@@ -1,1 +1,16 @@
+Day 47/100 of #DrGVishwanathanChallenge
 
+Today I solved LeetCode 104 -Maximum Depth of Binary Tree 
+This was a simple problem, but it was a good practice of understanding how recursion works with binary trees.
+Approach:
+I used DFS + recursion.
+For each node, I find the maximum depth of its left and right subtrees and then add 1 for the current node.
+If the node is null, I return 0.
+So basically:
+maxDepth = 1 + max(leftDepth, rightDepth)
+Complexity:
+
+Time: O(n) - every node is visited once
+Space: O(h) -due to the recursion stack, where h is the height of the tree
+The main takeaway for me was understanding how a problem can be broken down into smaller subtrees and solved recursively.
+#DrGVishwanathanChallenge #DSA #BinaryTree #LeetCode #Java 
