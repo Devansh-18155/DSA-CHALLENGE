@@ -1,1 +1,18 @@
+Day 50/100 of #DrGVishwanathanChallenge
+Today I solved LeetCode 100 -(Same Tree) 
 
+- Approach:
+I used recursion with DFS to compare the two binary trees:
+If both nodes are null, they are identical at that position.
+If one node is null or their values are different, the trees are not the same.
+Recursively compare both the left subtrees and right subtrees.
+The trees are considered the same only when both subtrees match at every level.
+
+-Time Complexity:
+O(n) -Each corresponding node is visited once.
+-Space Complexity:
+O(h)- Due to the recursive call stack, where h is the height of the tree.
+Worst case: O(n) for a skewed tree.
+
+Today's problem strengthened my understanding of Binary Trees, DFS, recursion, and base cases. It also reinforced how important it is to carefully handle null nodes when comparing tree structures.
+#DrGVishwanathanChallenge #LeetCode #DSA #Java #BinaryTree #DFS #Recursion #ProblemSolving
