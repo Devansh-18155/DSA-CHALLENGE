@@ -1,1 +1,10 @@
+Day 48 of #DrGVishwanathanChallenge
+Continuing my DSA journey with two more Binary Tree problems
 
+Day 48 -LeetCode 110: (Balanced Binary Tree)
+I used DFS + recursion to calculate the height of each subtree and check whether the difference between the left and right subtree heights is greater than 1.
+I used -1 as a signal for an unbalanced subtree, which also helps avoid unnecessary calculations.
+
+TC: O(n)
+SC: O(h)- recursion stack
+#DrGVishwanathanChallenge #DSA #BinaryTree #LeetCode #Java 
