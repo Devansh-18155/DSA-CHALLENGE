@@ -1,1 +1,10 @@
+Day 49- LeetCode 543: (Diameter of Binary Tree)
+For this problem, I used a similar DFS + recursion approach.
+While calculating the height of each node, I also calculated the longest path passing through that node using:
+leftHeight + rightHeight
+I kept updating the maximum diameter during the traversal.
 
+TC: O(n)
+SC: O(h)- recursion stack
+The interesting part of these two problems was seeing how the height of a binary tree can be used to solve different problems, instead of doing multiple traversals.
+#DrGVishwanathanChallenge #DSA #BinaryTree #LeetCode #Java 
