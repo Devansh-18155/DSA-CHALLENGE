@@ -1,1 +1,23 @@
+Day 51 /100 of #DrGVishwanathanChallenge
 
+Today, I solved LeetCode 103: (Binary Tree Zigzag Level Order Traversal)
+-Approach :
+I used Breadth-First Search (BFS) with a Deque.
+A queue/deque is used to process the binary tree level by level.
+For the first level, nodes are traversed from left to right.
+For the next level, nodes are traversed from right to left.
+This direction is alternated after processing every level.
+Using a Deque makes it efficient to add and remove nodes from both ends.
+
+-Time Complexity:
+O(n)- Every node is visited exactly once.
+-Space Complexity:
+O(n)-The queue can store nodes from a level of the tree, and the result also stores all nodes.
+
+-Key Learnings
+Today's problem helped me strengthen my understanding of:
+1) Binary Trees
+2) Breadth-First Search (BFS)
+3) Level Order Traversal
+4) Using a Deque for alternating traversal directions
+#DrGVishwanathanChallenge #LeetCode #DSA #Java #BinaryTree #BFS #Deque #TreeTraversal 
