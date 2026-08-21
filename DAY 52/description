@@ -1,1 +1,24 @@
+Day 52/100 of #DrGVishwanathanChallenge
 
+Today, I solved LeetCode 199: (Binary Tree Right Side View) 
+-Approach:
+I used Depth-First Search (DFS) with recursion.
+Traverse the tree by visiting the right child first, followed by the left child.
+Keep track of the current depth.
+Since we visit the right side first, the first node encountered at each depth is the node visible from the right side.
+Add a node to the result only when we visit that depth for the first time.
+
+-Time Complexity:
+O(n)-Every node is visited at most once.
+-Space Complexity:
+O(h)-Due to the recursive call stack, where h is the height of the tree.
+The output list can contain up to O(h) nodes.
+
+-Key Learnings:
+Today's problem helped me strengthen my understanding of:
+1) Binary Trees
+2) Depth-First Search (DFS)
+3) Recursive traversal
+4) Right-first traversal
+5) Tracking nodes based on tree depth
+#DrGVishwanathanChallenge #LeetCode #DSA #Java #BinaryTree #DFS #Recursion #TreeTraversal
