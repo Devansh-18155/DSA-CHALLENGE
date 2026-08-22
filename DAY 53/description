@@ -1,1 +1,25 @@
+Day 53/100 of #DrGVishwanathanChallenge
+Today, I solved LeetCode 101-(Symmetric Tree)
+-Problem :
+Given the root of a binary tree determine whether the tree is a mirror image of itself i.e symmetric around its center.
 
+-Approach : Mirror Reflection
+The key idea is to compare the left and right subtrees simultaneously.
+For every pair of nodes:
+If both nodes are null -> they are symmetric.
+If only one node is null -> not symmetric.
+If their values are different -> not symmetric.
+Otherwise, recursively compare:
+Left child of the left subtree <-> Right child of the right subtree
+Right child of the left subtree <-> Left child of the right subtree
+This recursive mirror comparison makes the solution simple and avoids unnecessary traversal logic.
+
+Time Complexity: O(n)
+Each node is visited once.
+Space Complexity: O(h)
+Due to the recursion stack, where h is the height of the tree. In the worst case, it can be O(n).
+
+-Key Takeaway
+1) Today's problem reinforced an important concept in Binary Trees and Recursion
+2) Sometimes, instead of checking a structure directly, comparing two parts as mirror images can make the solution much simpler.
+#DrGVishwanathanChallenge #DSA #DataStructures #Algorithms #LeetCode #BinaryTree #Recursion #Java #ProblemSolving 
