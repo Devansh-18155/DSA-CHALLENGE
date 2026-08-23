@@ -1,1 +1,18 @@
+Day 54/100 of #DrGVishwanathanChallenge
+Today, I solved two Binary Tree problems in Java
+-Problem 1: 2236. (Root Equals Sum of Children)
 
+-Approach:
+ This problem was straightforward. I simply checked whether the value of the root node is equal to the sum of its left and right child.
+
+Time Complexity: O(1)
+ Space Complexity: O(1)
+
+-Problem 2: 226. (Invert Binary Tree)
+
+-Approach:
+ For every node, I recursively inverted its left and right subtrees and then swapped them. The key idea was to visit each node and reverse its children.
+
+Time Complexity: O(n)
+ Space Complexity: O(h) due to the recursion stack, where h is the height of the tree.
+#DSA #LeetCode #Java #BinaryTree #Recursion #DrGVishwanathanChallenge
