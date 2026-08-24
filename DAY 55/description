@@ -1,1 +1,23 @@
+Day 55 of #DrGVishwanathanChallenge
 
+Today, I solved another Binary Tree problem in Java 
+
+Problem: 572. Subtree of Another Tree
+
+Approach:
+For this problem, I used recursion and tree traversal. I traversed through every node of the main tree and, at each node, checked whether the subtree starting from that node is identical to the given subRoot.
+
+To compare two trees, I created a separate helper function, isSame(). This function checks whether both nodes have the same value and recursively verifies their left and right subtrees.
+
+Key Concepts:
+ Binary Trees
+Recursion
+ Tree Traversal
+ Comparing Two Binary Trees
+
+Time Complexity: O(m × n)
+Space Complexity: O(h) due to the recursion stack.
+
+A good problem for understanding how recursion can be used both to traverse a tree and compare two subtrees. Slowly getting more comfortable with Binary Tree problems! 💪🌳
+
+#DSA #LeetCode #Java #BinaryTree #Recursion #TreeTraversal #DrGVishwanathanChallenge #CodingJourney
