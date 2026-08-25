@@ -1,1 +1,23 @@
+Day 56 /100 of #DrGVishwanathanChallenge
+Today, I solved LeetCode 124 -(Binary Tree Maximum Path Sum)
+-Approach
+The key idea is to use Postorder DFS first process the left and right subtrees, then calculate the result for the current node.
 
+For every node:
+ Find the maximum contribution from the left subtree.
+ Find the maximum contribution from the right subtree.
+ Ignore negative contributions using Math.max(childSum, 0).
+ Calculate the maximum path passing through the current node:
+node.val + left + right
+ Update the global maximum answer.
+
+-Time Complexity: O(n)
+Each node is visited exactly once.
+-Space Complexity: O(h)
+Due to the recursion stack, where h is the height of the tree. In the worst case, this becomes O(n).
+
+- Key Takeaway
+Today's problem helped me understand an important Binary Tree pattern:
+Postorder Traversal + Recursion + Global Maximum
+Instead of trying to calculate every possible path separately, we use information from the subtrees to build the optimal solution at each node.
+#DrGVishwanathanChallenge #DSA #DataStructures #Algorithms #BinaryTree #Recursion #DynamicProgramming #Java 
