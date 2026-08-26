@@ -1,1 +1,32 @@
+Day 57 of #DrGViswanathanChallenge
 
+-Problem 1: 951. (Flip Equivalent Binary Trees)
+-Approach 
+First, check the base cases:
+If both nodes are null, they are equivalent.
+If only one is null or their values are different, return false.
+For every pair of nodes, recursively check two possibilities:
+No Flip: Left ↔ Left and Right ↔ Right
+Flip: Left ↔ Right and Right ↔ Left
+If either possibility is valid, the trees are flip equivalent.
+
+-Time Complexity: O(N)
+-Space Complexity: O(H) for the recursion stack, where H is the height of the tree.
+
+- Problem 2: 700. (Search in a Binary Search Tree)
+-Approach:
+Start from the root of the BST.
+If the current node is null, the value doesn't exist.
+If the current node's value matches the target, return that node.
+If the target is greater, search in the right subtree.
+Otherwise, search in the left subtree.
+
+-Time Complexity: O(H), where H is the height of the tree
+-Space Complexity: O(H) due to recursion.
+-Key Takeaways
+ 1) Recursion is extremely useful for solving tree problems.
+ 2) Always handle null nodes carefully in recursive tree solutions.
+ 3) A problem can sometimes have multiple valid recursive paths to explore.
+ 4) Understanding BST properties helps eliminate unnecessary traversal.
+5) Tree height plays an important role in both time and space complexity.
+#DrGViswanathanChallenge #100DaysOfCode #DSA #DataStructures #Algorithms #BinaryTree #BinarySearchTree
