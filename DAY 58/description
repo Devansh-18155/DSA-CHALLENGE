@@ -1,1 +1,21 @@
+Day 58 /100 of #DrGViswanathanChallenge
+Today, I solved LeetCode 701 - (Insert into a Binary Search Tree.)
+- Problem: 701. Insert into a Binary Search Tree
 
+- Approach:
+The key is to use the BST property:
+If val is greater than the current node, move to the right subtree.
+If val is smaller, move to the left subtree.
+Continue until an empty (null) position is found.
+Insert the new node at that position.
+I used an iterative approach with a pointer curr to traverse the tree.
+This avoids unnecessary traversal and keeps the insertion straightforward.
+
+-Time Complexity:
+O(H)- where H is the height of the BST.
+-Space ComplexityO(1)- only a few pointers are used, with no recursion or extra data structures.
+- Key Takeaways
+1) Strengthened my understanding of Binary Search Trees
+2) Learned how the BST property simplifies insertion
+3) Practiced an iterative tree traversal
+#DrGViswanathanChallenge #DSA #DataStructures #Algorithms #BinarySearchTree #BST #Java 
