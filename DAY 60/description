@@ -1,1 +1,14 @@
+Day 60: Validate Binary Search Tree- LeetCode 98
+Today’s problem was about determining whether a given binary tree is a valid Binary Search Tree (BST).
+- Approach:
+A common mistake is to check only whether the left child is smaller and the right child is greater than the current node. However, every node must satisfy the constraints created by all of its ancestors.
+So, I used a range-based recursive approach:
+For every node, check whether its value lies within the allowed range.
+For the left subtree, update the maximum boundary to the current node's value.
+For the right subtree, update the minimum boundary to the current node's value.
+If any node violates its range, return false.
+Using long for the boundaries also helps safely handle values across the complete integer range.
+-Time Complexity: O(n) each node is visited once.
+-Space Complexity: O(h) recursion stack, where h is the height of the tree.
 
+#DrGVishwanathanChallenge #DSA #BinarySearchTree #BST #LeetCode #Java #DataStructures 
