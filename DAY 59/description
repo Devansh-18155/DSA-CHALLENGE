@@ -1,1 +1,13 @@
+Kth Smallest Element in a BST- LeetCode 230
+Today’s problem focused on finding the Kth smallest value in a Binary Search Tree (BST).
+- Approach:
+The key observation is that inorder traversal of a BST visits nodes in sorted ascending order.
+So, I used the following approach:
+Traverse the left subtree first.
+Visit the current node and increment a count.
+When count == k, the current node contains the Kth smallest element.
+If k hasn't been reached, continue with the right subtree.
+This makes the problem much simpler once we recognize the sorted-order property of BSTs.
 
+-Time Complexity: O(n) :worst case, we may visit every node.
+-Space Complexity: O(h): recursion stack, where h is the height of the tree.
