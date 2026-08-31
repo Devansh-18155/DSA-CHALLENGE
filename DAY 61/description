@@ -1,1 +1,23 @@
+Day 61 /100 of #DrGViswanathanChallenge
 
+Today, I solved LeetCode 1008 -(Construct Binary Search Tree from Preorder Traversal.)
+- Approach:
+I used recursion with a boundary (max value) to construct the BST efficiently.
+The first element of the preorder traversal becomes the root.
+Maintain an index i to track the current element.
+If i reaches the end of the array or the current value exceeds the allowed upper bound, return null.
+Create a node using preorder[i] and increment i.
+Recursively construct the left subtree with the current node's value as the upper bound.
+Recursively construct the right subtree using the previous upper bound.
+Since preorder traversal visits root → left → right, this naturally allows us to reconstruct the BST.
+
+- Time Complexity: O(N) Each element is processed only once.
+-Space Complexity:O(H) Due to the recursive call stack, where H is the height of the BST.
+
+-Key Takeaways
+1) Strengthened my understanding of BST properties
+2) Learned how preorder traversal can be used to reconstruct a BST
+3) Practiced using upper bounds in recursion
+4) Understood how a single index can efficiently process the entire array
+5) Improved my understanding of recursive tree construction
+#DrGViswanathanChallenge #DSA #DataStructures #Algorithms #BinarySearchTree #BST #BinaryTree #Recursion
