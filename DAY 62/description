@@ -1,1 +1,26 @@
 
+Day 62 /100 of #DrGViswanathanChallenge
+
+Today, I solved LeetCode 105 – Construct Binary Tree from Preorder and Inorder Traversal.
+
+- Approach:
+I used recursion + HashMap to efficiently construct the binary tree.
+In preorder, the first element is always the root.
+Use a HashMap to store the index of every value in the inorder traversal.
+Find the root's position in inorder to divide the tree into:
+Left subtree: elements before the root
+Right subtree: elements after the root
+Recursively construct both subtrees.
+Maintain an index in preorder to process each root exactly once.
+
+-Time Complexity : O(N) 
+-Space Complexity : O(N) 
+
+-Key Takeaways:
+1) Preorder helps identify the root
+2)  Inorder helps divide the tree into left and right subtrees
+3) HashMap makes finding the root position efficient
+4) Recursion makes the tree construction clean and intuitive
+5) Strengthened my understanding of tree traversal relationships
+
+#DrGViswanathanChallenge #DSA #DataStructures #Algorithms #BinaryTree #TreeTraversal #Recursion #HashMap
