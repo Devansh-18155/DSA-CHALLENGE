@@ -1,1 +1,20 @@
+- Problem: 783. Minimum Distance Between BST Nodes
+- Approach:
+The key observation is that an inorder traversal of a BST produces values in sorted order.
+So instead of comparing every pair of nodes:
+Perform an inorder traversal.
+Keep track of the previously visited node using prev.
+For every current node, calculate:
+ current value - previous value
+Keep updating the minimum difference.
+Since the values are visited in sorted order, the minimum difference will always be between adjacent values in the inorder traversal.
 
+-Time Complexity: O(N)
+-Space Complexity: O(H)
+
+- Key Takeaways
+1) Inorder traversal of a BST gives a sorted sequence
+2) Minimum difference only needs to be checked between adjacent values
+3) Avoided unnecessary pairwise comparisons
+
+#DrGViswanathanChallenge #DSA #DataStructures #Algorithms #BinarySearchTree #BST #TreeTraversal #InorderTraversal #Recursion #Java 
