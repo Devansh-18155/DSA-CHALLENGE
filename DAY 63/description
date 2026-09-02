@@ -1,1 +1,18 @@
+Day 63 of #DrGViswanathanChallenge
 
+- Problem: 129. Sum Root to Leaf Numbers
+- Approach:
+I used DFS + Recursion to build the number represented by each root-to-leaf path.
+Start with path = 0.
+At every node, update the current number using:
+ path = path × 10 + node.val
+When a leaf node is reached, add the constructed number to the total sum.
+Recursively explore both the left and right subtrees.
+
+-Time Complexity :O(N)
+-Space Complexity: O(H)
+
+- Key Takeaways:
+1) Practiced DFS on Binary Trees
+2) Learned how to carry information through recursive calls
+3) Understood how root-to-leaf paths can be converted into numbers
