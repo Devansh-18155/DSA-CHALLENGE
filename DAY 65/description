@@ -1,1 +1,17 @@
+Leetcode(235): Finding the Lowest Common Ancestor (LCA) of two given nodes in a Binary Search Tree.
+- Approach
+The key advantage here is the BST property:
+If both p and q are greater than the current node, move to the right subtree.
+If both are smaller than the current node, move to the left subtree.
+Otherwise, the current node is the Lowest Common Ancestor.
+I implemented this using an iterative approach, avoiding recursion and making use of the BST structure.
 
+Time Complexity: O(h) 
+Space Complexity: O(1)
+
+- Key Takeaway:
+The biggest takeaway from today's problem:
+Always use the properties of the data structure to optimize your solution.
+Instead of traversing the entire tree, the BST property allows us to decide the direction at every step.
+
+#DrGVishwanathanChallenge #DSA #BST #BinarySearchTree #LeetCode #Java #DataStructures 
