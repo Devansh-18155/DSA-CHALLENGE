@@ -1,1 +1,49 @@
+Day 66/100 of #DrGViswanathanChallenge
 
+Continuing my DSA journey with Binary Trees
+
+Today, I solved LeetCode 662 – Maximum Width of Binary Tree.
+
+- Approach:
+
+I used BFS (Level Order Traversal) + Indexing to calculate the width of each level.
+
+Assign an index to every node as if the tree were a complete binary tree.
+
+For a node at index i:
+
+Left child → 2 * i
+
+Right child → 2 * i + 1
+
+Use a queue to process the tree level by level.
+
+For each level, record the index of the first and last node.
+
+The width of that level is:
+
+lastIndex - firstIndex + 1
+
+Keep track of the maximum width across all levels.
+
+This indexing technique allows the null gaps between nodes to be counted correctly.
+
+
+
+-Time Complexity: O(N) 
+
+- Space Complexity: O(N)
+
+
+
+-Key Takeaways
+
+1) Practiced BFS / Level Order Traversal
+
+2) Learned how indexing can represent positions in a binary tree
+
+3) Understood how to count gaps between non-null nodes
+
+
+
+#DrGViswanathanChallenge #DSA #DataStructures #Algorithms #BinaryTree #BFS #LevelOrderTraversal #Queue 
