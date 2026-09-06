@@ -1,1 +1,22 @@
+Day 67/100 of #DrGViswanathanChallenge
 
+Today, I solved LeetCode 173 – Binary Search Tree Iterator
+The problem was about implementing an iterator that returns the elements of a BST in ascending order, i.e., inorder traversal.
+
+- Approach
+Instead of storing the entire inorder traversal, I used a stack to simulate recursion:
+Push all left nodes onto the stack.
+next() pops the smallest available node.
+Then move to its right subtree and push its left chain.
+hasNext() checks whether there are still nodes to process.
+This gives us an efficient lazy inorder traversal.
+
+Time complexity: O(1) 
+Space complexity: O(h)
+
+- Key Takeaways:
+1) BST inorder traversal produces elements in sorted order.
+2) A stack can effectively replace recursive traversal.
+3) Iterators are useful when we don't want to store the entire traversal.
+
+#DSA #LeetCode #Java #BinarySearchTree #BST #Tree #ProblemSolving #CodingChallenge #LearningInPublic
