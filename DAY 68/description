@@ -1,1 +1,17 @@
+Day 68 and 69 of #DrGViswanathanChallenge
+Today, I solved LeetCode 236 – Lowest Common Ancestor of a Binary Tree 
+- Approach:
+I used recursion to search for both nodes in the left and right subtrees.
+If the current node is null, p, or q, return it.
+Recursively search the left and right subtrees.
+If both sides return a node, the current node is the LCA.
+Otherwise, return whichever side contains a node.
+
+Time: O(n)
+Space: O(h) 
+
+- Key Takeaways:
+LCA can be solved elegantly using postorder-style recursion.
+The return value from each subtree carries important information upward.
+If both left and right contain one target, the current node is their lowest common ancestor.
 
