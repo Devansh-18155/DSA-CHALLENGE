@@ -1,1 +1,17 @@
+LeetCode 863 – All Nodes Distance K in Binary Tree 
+-Approach:
+This problem requires treating the binary tree like an undirected graph, because from a node we can move:
+Left child
+Right child
+Parent
+I first built a parent map using DFS. Then I used BFS starting from the target node and explored the tree level by level until reaching distance K.
+A HashSet keeps track of visited nodes so we don't traverse back and forth.
 
+Time: O(n)
+Space: O(n)
+-Key Takeaways:
+A tree can be converted into a graph-like structure using a parent map.
+BFS is ideal for finding nodes at an exact distance.
+The visited set prevents cycles when moving between child and parent.
+
+#DrGViswanathanChallenge #DSA #LeetCode #Java #BinaryTree #LCA #BFS #DFS #TreeProblems #ProblemSolving #100DaysOfCode #LearningInPublic
