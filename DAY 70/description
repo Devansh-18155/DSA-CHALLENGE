@@ -1,1 +1,20 @@
+Day 70/100 of hashtag#DrGViswanathanChallenge
+Today, I solved LeetCode 222 – Count Complete Tree Nodes 
+This problem was a great exercise in using the properties of a Complete Binary Tree to do better than a simple O(n) traversal.
+- Approach:
+For every node, I calculate:
+The height of the leftmost path
+The height of the rightmost path
+If both heights are equal, the subtree is a perfect binary tree, so its number of nodes can be calculated directly using:
+2^h - 1
+Otherwise, I recursively count the nodes in the left and right subtrees.
 
+Time complexity : O(log² n)
+Space complexity : O(log n) 
+
+-Key Takeaways:
+Complete binary trees have useful structural properties that can be exploited.
+We don't always need to visit every node.
+Calculating the left and right heights helps identify a perfect subtree.
+Combining tree height + recursion can significantly improve efficiency.
+hashtag#DrGViswanathanChallenge hashtag#DSA hashtag#LeetCode hashtag#Java hashtag#BinaryTree hashtag#CompleteBinaryTree hashtag#Tree hashtag#Recursion hashtag#ProblemSolving
