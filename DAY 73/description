@@ -1,1 +1,19 @@
 
+Day 73 :
+Solved LeetCode 99 – Recover Binary Search Tree today!
+- Approach:
+A valid BST has an in-order traversal in sorted order.
+I used in-order traversal to detect the two nodes that violate this ordering:
+ Track the previous node. 
+ When prev.val > current.val, a violation is found. 
+ Identify the two incorrect nodes and swap their values at the end. 
+
+Time: O(n) 
+Space: O(h) for the recursion stack
+
+-Takeaways:
+ In-order traversal is extremely useful for BST problems. 
+ A BST's structure can be validated through its sorted in-order sequence. 
+ Learned how to recover a corrupted BST without changing its structure. 
+
+hashtag#DSA hashtag#LeetCode hashtag#Java hashtag#BST hashtag#BinarySearchTree hashtag#Trees
