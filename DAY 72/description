@@ -1,1 +1,15 @@
+Day 72 and 73 /100 of hashtag#DrGViswanathanChallenge
+Solved LeetCode 653 – Two Sum IV today!
 
+- Approach:
+I used a HashSet to keep track of values already visited.
+For every node:
+ Check whether k - node.val already exists in the set. 
+ If yes → a valid pair exists. 
+ Otherwise, add the current value and continue through the tree. 
+
+Time: O(n) 
+Space: O(n) 
+ -Takeaways:
+ HashSet makes pair-sum checking efficient. 
+ BST properties aren't always necessary when a simple traversal + HashSet gives an optimal solution. 
