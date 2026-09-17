@@ -1,1 +1,20 @@
+Day 74 /100 of #DrGVishwanathanChallenge
+Solved LeetCode 1373 – Maximum Sum BST in Binary Tree today!
+- Approach:
+I used post-order traversal to process the left and right subtrees before the current node.
+For every subtree, I keep track of:
+min → minimum value 
+max → maximum value 
+sum → sum of all nodes 
+A subtree is a valid BST when:
+ left.max < root.val < right.min
+If it is a BST, I calculate its sum and update the maximum answer.
 
+Time: O(n)
+Space: O(h) 
+
+- Takeaways:
+ Post-order traversal is very useful when the parent depends on information from its children. 
+ Returning multiple properties from recursion makes complex tree problems much easier.
+
+#DrGVishwanathanChallenge #DSA #LeetCode #Java #BinarySearchTree #BinaryTree #Trees #ProblemSolving 
